@@ -4,6 +4,7 @@
 <?php get_sidebar(); ?>
 
       <div id="contents-list">
+        <?php query_posts('posts_per_page=6'); ?>
         <?php if(have_posts()):while(have_posts()):the_post(); ?>
         <div class="post">
             <a href="<?php the_permalink(); ?>"><div class="post-img"><?php the_post_thumbnail(array(210, 155)); ?></div></a>
@@ -15,6 +16,13 @@
           </div><!--class="post-text" -->
         </div><!--class="post" -->
       <?php endwhile;endif; ?>
+
+      <?php if ($wp_query -> max_num_pages > 1) : ?>
+        <div class="navigation">
+          <div class="alignleft"><?php next_posts_link('<< PREV'); ?></div>
+          <div class="alignright"><?php previous_posts_link('NEXT >>'); ?></div>
+        </div>
+    <?php endif; ?>
     </div>
 
 <?php get_footer(); ?>

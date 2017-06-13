@@ -13,36 +13,19 @@
 
 <div id="saide-ranking">
   <ul>
-    <li class="saide-ranking-li"><a href="#">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/cube.jpg" alt="drone" class="saide-ranking-img" />
-      <p class="date">2017.05.05</p>
-      <p class="ranking-title"> 新しくダイソンが出たそうなので旧型と比較した</p>
+  <?php
+  //記事のPV情報を取得
+  setPostViews(get_the_ID());
+  //ループ開始
+  query_posts('meta_key=post_views_count&orderby=meta_value_num&posts_per_page=5&order=DESC');while(have_posts()) : the_post();?>
+
+    <li class="saide-ranking-li"><a href="<?php the_permalink(); ?>">
+      <div class="saide-ranking-img"><?php the_post_thumbnail(array(90, 80)); ?></div>
+      <p class="date"><?php the_time("Y/n/j"); ?></p>
+      <p class="ranking-title"> <?php the_title(); ?></p>
     </a>
     </li>
-    <li class="saide-ranking-li"><a href="#">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/cube.jpg" alt="drone" class="saide-ranking-img" />
-      <p class="date">2017.05.05</p>
-      <p class="ranking-title">新しくダイソンが出たそうなので旧型と比較した</p>
-    </a>
-  </li>
-    <li class="saide-ranking-li"><a href="#">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/cube.jpg" alt="drone" class="saide-ranking-img" />
-      <p class="date">2017.05.05</p>
-      <p class="ranking-title"> 新しくダイソンが出たそうなので旧型と比較した</p>
-    </a>
-    </li>
-    <li class="saide-ranking-li"><a href="#">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/cube.jpg" alt="drone" class="saide-ranking-img" />
-      <p class="date">2017.05.05</p>
-      <p class="ranking-title">  新しくダイソンが出たそうなので旧型と比較した</p>
-    </a>
-    </li>
-    <li class="saide-ranking-bottom"><a href="#">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/cube.jpg" alt="drone" class="saide-ranking-img" />
-      <p class="date">2017.05.05</p>
-      <p class="ranking-title">新しくダイソンが出たそうなので旧型と比較した</p>
-    </a>
-    </li>
+    <?php endwhile; ?>
   </ul>
 </div>
 </div>

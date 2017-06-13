@@ -136,6 +136,7 @@ a{
   display: inline;
   padding: 0;
   margin: 0;
+  list-style:none;
 }
 .saide-ranking-li p {
 color: #4A4A4A;
