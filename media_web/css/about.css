@@ -1,0 +1,150 @@
+html,body{
+  width: 100%;
+  height: 100%auto;
+  margin: 0;
+}
+
+}
+a{
+  color: #4A4A4A;
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+h3{
+  font: #4A4A4A;
+}
+#header{
+  height: 60px;
+  border-bottom: 1px solid #E6E6E6;
+}
+#logo {
+  height: 60px;
+  width: 1024px;
+  margin: 0 auto;
+}
+#container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#leftside{
+  float: left;
+}
+#about-category ul{
+  width: 170px;
+  min-height:  171px;
+  height: auto;
+  background-color: white;
+  font-family: 'Hiragino Sans';
+  font-weight: 800;
+  list-style: none;
+  margin: 0px 45px 0px 60px;
+}
+#about-category li{
+  display: inline;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about-top h3 {
+  display: block;
+  padding: 7px 0px 6px 15px;
+  border: 1px solid #E6E6E6;
+  border-top-left-radius: 12px;
+}
+.about-top a{
+  display: block;
+  padding: 7px 0px 6px 15px;
+  border: 1px solid #E6E6E6;
+  border-top-left-radius: 12px;
+}
+.about-nav{
+  font-size: 14px;
+}
+.about-nav a{
+  display: block;
+  padding: 7px 0px 6px 15px;
+  border-right: 1px solid #E6E6E6;
+  border-left: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+#about-category li a:hover{
+  color: #FF5C04;
+  padding: 7px 0px 6px 15px;
+}
+
+.page-content {
+  width: 689px;
+  height:   auto;
+  background-color: #F8F8F8;
+  border: 1px solid #E6E6E6;
+  margin: 60px 60px 60px 275px
+}
+.page-content h2 {
+  padding: 30px 0 31px 50px;
+  color: #4A4A4A;
+}
+.content {
+  font-size: 16px;
+  color: #4A4A4A;
+}
+.content h3,p,ol{
+  padding: 0px 70px 0px 70px;
+}
+.content h3 {
+  margin: 22px 0px 12px 0px;
+}
+.content p {
+  margin-bottom: 12px;
+}
+
+.content ol {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.list-style {
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+.list-style dt {
+  font-size: 18px;
+  font-weight: bold;
+}
+.list-style dd {
+  font-size: 18px;
+
+}
+footer {
+  height: 340px;
+  background-color: black;
+}
+.footer-content {
+  width: 1024px;
+  color: white;
+  margin: 0 auto;
+  padding: 54px 0px 0px 60px;
+
+}
+.footer-content h3, h4{
+  margin-bottom: 20px;
+}
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content a {
+  color: white;
+}
+.footer-about {
+  float: left;
+}
+.footer-category {
+  margin-left: 220px;
+}
+.footer-content li a:hover {
+  color: #FF5C04;
+}

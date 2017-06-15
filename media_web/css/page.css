@@ -1,14 +1,3 @@
-/*
-Theme Name: test_m
-Description:affili_2
-Theme URI: http://localhost/wordpress/
-Author: axis
-Author URI: http://localhost/wordpress/
-Version: 2
-License: axis license
-License URI: http://localhost/wordpress/
-*/
-
 html,body{
   width: 100%;
   height: 100%auto;
@@ -24,10 +13,11 @@ a{
   padding: 0;
 }
 
-
+/* header layout */
 #header{
-  height: 560px;
+  height: 60px;
   background: linear-gradient(45deg, rgba(74, 59, 212, 100), rgba(235, 80, 255, 100));
+  border-bottom: 1px solid #E6E6E6;
 }
 #logo {
   height: 60px;
@@ -46,20 +36,8 @@ a{
   font-size: 24px;
   padding: 14px 0 15px 60px;
 }
-.header-slider {
-  height: 500px;
-  background-color: #9B9B9B;
-}
-/*#video{
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  padding: 0;
 
-}*/
-#container{
-
-}
+/* Navi layout */
 #nav-category ul{
   width: 235px;
   min-height:  279px;
@@ -94,6 +72,7 @@ a{
   padding: 17px 0px 17px 38px;
 }
 
+/* Adsence */
 .right-ad {
   width: 235px;
   height: 195px;
@@ -103,6 +82,7 @@ a{
   margin-left: 49px;
 }
 
+/* ranking layout */
 #saide-ranking ul{
   width: 235px;
   height: auto;
@@ -112,7 +92,6 @@ a{
 }
 #saide-ranking li{
   display: inline;
-  height: 500px;
   padding: 0;
   margin: 0;
 }
@@ -160,53 +139,6 @@ color: #4A4A4A;
   float: right;
 }
 
-.post{
-  width: 645px;
-  height: 195px;
-  margin-bottom: 10px;
-  border: solid 1px #E6E6E6;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-.ad {
-  width: 645px;
-  height: 195px;
-  margin-bottom: 10px;
-}
-.ad-box {
-  float: left;
-  width: 235px;
-  height: 195px;
-  background-color: #9B9B9B;
-  margin-left: 65px;
-}
-.ad-box2 {
-  margin-left: 347px;
-  width: 235px;
-  height: 195px;
-  background-color: #9B9B9B;
-}
-
-.post-img{
-  width: 210px;
-  height: 155px;
-  margin: 20px 10px 20px 25px;
-  float: left;
-}
-
-.post-text{
-  padding-left: 10px;
-  padding-right: 32px;
-  display: block;
-  padding-top: 18px;
-  font-size: 18px;
-}
-.post{
-  word-wrap: break-word;
-}
-
-/*記事ページのコンテンツエリア*/
-
 #page-main-content{
   width: 640px;
   height: auto;
@@ -249,6 +181,38 @@ color: #4A4A4A;
   height: 195px;
   background-color: #9B9B9B;
 }
+
+/* recommend layout */
+#recommended-content {
+  width: 540px;
+  height: auto;
+  margin: 0 auto;
+}
+#recommended-content h2{
+  padding: 20px 0px 0px 20px;
+}
+.reco-content {
+  width: 540px;
+  height: 130px;
+  margin: 20px 0px;
+  background-color: white;
+  border: 1px solid #D8D8D8;
+  border-radius: 12px;
+}
+.reco-content img {
+  width: 140px;
+  height: 100px;
+  float: left;
+  margin: 15px 15px;
+}
+.reco-content p {
+  padding: 15px 0px 0px 0;
+}
+.title {
+  padding: 10px 40px 15px 0px;
+}
+
+/* Shere content layout */
 #share{
 }
 
@@ -315,8 +279,8 @@ color: #4A4A4A;
 	text-decoration:none;
 	color:#ffffff;
 }
-/*記事ページのコンテンツエリア終わり*/
 
+/* Footer layout */
 footer {
   position: absolute;
   left: 0;

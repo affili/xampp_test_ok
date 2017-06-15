@@ -1,15 +1,17 @@
 <!-- Right Navi -->
 <div id="right-side">
-<div id="nav-category">
-  <ul>
-    <li class="nav-top"><a href="#">ガジェット</a></li>
-    <li class="nav"><a href="#">おもちゃ</a></li>
-    <li class="nav"><a href="#">ゲーム</a></li>
-    <li class="nav"><a href="#">趣味</a></li>
-    <li class="nav"><a href="#">ライフスタイル</a></li>
-    <li class="nav"><a href="#">ワークスペース</a></li>
-  </ul>
-</div>
+    <div id="nav-category">
+      <ul>
+        <li class="nav-top"><a href="#">ガジェット</a></li>
+        <li class="nav"><a href="#">おもちゃ</a></li>
+        <li class="nav"><a href="#">ゲーム</a></li>
+        <li class="nav"><a href="#">趣味</a></li>
+        <li class="nav"><a href="#">ライフスタイル</a></li>
+        <li class="nav"><a href="#">ワークスペース</a></li>
+      </ul>
+    </div>
+
+<div class="right-ad"></div>
 
 <div id="saide-ranking">
   <ul>
