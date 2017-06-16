@@ -5,9 +5,9 @@
         <div class="footer-about">
           <h3>About us</h3>
           <ul>
-            <li><a href="http://localhost/wordpress/about/kaisha.html">会社概要</a></li>
-            <li><a href="http://localhost/wordpress/about/riyou.html">利用規約</a></li>
-            <li><a href="about/privacy.html">プライバシーポリシー</a></li>
+            <li><a href="about/kaisha.php">会社概要</a></li>
+            <li><a href="about/riyou.php">利用規約</a></li>
+            <li><a href="about/privacy.php">プライバシーポリシー</a></li>
           </ul>
         </div>
         <div class="footer-category">

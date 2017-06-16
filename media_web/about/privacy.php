@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>simple media</title>
-  <link rel="stylesheet" href="../css/main.css" media="screen" />
-  <link rel="stylesheet" href="../css/about.css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>media_web/style.css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>media_web/css/about.css" media="screen" />
   <!-- <link rel="#" href="#" /> -->
   <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
   <!--ビューボードの設置-->
@@ -22,13 +22,8 @@
       <!-- Left side bar -->
       <div id="leftside">
         <div id="about-category">
-          <ul>
-            <li class="about-top">
-              <h3>About us</h3></li>
-            <li class="about-nav"><a href="kaisha.html">会社概要</a></li>
-            <li class="about-nav"><a href="riyou.html">利用規約</a></li>
-            <li class="about-nav"><a href="privacy.html">プライバシー規約</a></li>
-          </ul>
+              <h3>About us</h3>
+              <?php wp_nav_menu( array('theme_location' => 'header-navi')); ?>
         </div>
       </div>
       <!--利用規約-->
@@ -63,9 +58,9 @@
         <div class="footer-about">
           <h3>About us</h3>
           <ul>
-            <li><a href="kaisha.html">会社概要</a></li>
-            <li><a href="riyou.html">利用規約</a></li>
-            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="about/kaisha.php">会社概要</a></li>
+            <li><a href="about/riyou.php">利用規約</a></li>
+            <li><a href="about/privacy.php">プライバシーポリシー</a></li>
           </ul>
         </div>
         <div class="footer-category">

@@ -11,6 +11,7 @@ Template Name: 固定ページ(about)
   <title>simple media</title>
 
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/about.css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?> style.css" media="screen" />
   <!-- <link rel="#" href="#" /> -->
   <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
   <!--ビューボードの設置-->
@@ -29,9 +30,9 @@ Template Name: 固定ページ(about)
           <ul>
             <li class="about-top">
               <h3>About us</h3></li>
-            <li class="about-nav"><a href="kaisha.html">会社概要</a></li>
-            <li class="about-nav"><a href="riyou.html">利用規約</a></li>
-            <li class="about-nav"><a href="privacy.html">プライバシー規約</a></li>
+            <li class="about-nav"><a href="about/kaisha.php">会社概要</a></li>
+            <li class="about-nav"><a href="about/riyou.php">利用規約</a></li>
+            <li class="about-nav"><a href="about/privacy.php">プライバシー規約</a></li>
           </ul>
         </div>
       </div>
@@ -45,9 +46,9 @@ Template Name: 固定ページ(about)
           <div class="footer-about">
             <h3>About us</h3>
             <ul>
-              <li><a href="kaisha.html">会社概要</a></li>
-              <li><a href="riyou.html">利用規約</a></li>
-              <li><a href="privacy.html">プライバシーポリシー</a></li>
+              <li><a href="about/kaisha.php">会社概要</a></li>
+              <li><a href="about/riyou.php">利用規約</a></li>
+              <li><a href="about/privacy.php">プライバシーポリシー</a></li>
             </ul>
           </div>
           <div class="footer-category">

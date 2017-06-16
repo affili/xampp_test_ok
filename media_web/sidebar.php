@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Right saide navi
+*/
+ ?>
 <!-- Right Navi -->
 <div id="right-side">
     <div id="nav-category">
