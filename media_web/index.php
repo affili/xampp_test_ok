@@ -11,7 +11,7 @@
           <div class="post-text">
             <a href="<?php the_permalink(); ?>">
               <h3><?php the_title(); ?></h3>
-              <p><?php the_excerpt();?></p>
+              <!--<p><?php the_excerpt();?></p>-->
             </a>
           </div><!--class="post-text" -->
         </div><!--class="post" -->
