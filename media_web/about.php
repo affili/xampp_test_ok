@@ -26,43 +26,17 @@ Template Name: 固定ページ(about)
       <!-- Left side bar -->
       <div id="leftside">
         <div id="about-category">
-          <ul>
-            <li class="about-top">
-              <h3>About us</h3></li>
-            <li class="about-nav"><a href="kaisha.html">会社概要</a></li>
-            <li class="about-nav"><a href="riyou.html">利用規約</a></li>
-            <li class="about-nav"><a href="privacy.html">プライバシー規約</a></li>
-          </ul>
+          <h3>About</h3>
+          <?php wp_nav_menu( array('theme_location' => 'about_menu')); ?>
         </div>
       </div>
       <!-- 会社概要 -->
       <div class="page-content">
-        <h2><?php the_title(); ?></h2>
-        <?php the_content();?>
-      </div>
-      <footer>
-        <div class="footer-content">
-          <div class="footer-about">
-            <h3>About us</h3>
-            <ul>
-              <li><a href="kaisha.html">会社概要</a></li>
-              <li><a href="riyou.html">利用規約</a></li>
-              <li><a href="privacy.html">プライバシーポリシー</a></li>
-            </ul>
-          </div>
-          <div class="footer-category">
-            <h4>商品カテゴリー</h4>
-            <ul>
-              <li><a href="#">ガジェット</a></li>
-              <li><a href="#">おもちゃ</a></li>
-              <li><a href="#">ゲーム</a></li>
-              <li><a href="#">趣味</a></li>
-              <li><a href="#">ライフスタイル</a></li>
-              <li><a href="#">ワークスペース</a></li>
-            </ul>
-          </div>
+        <?php if(have_posts()): while(have_posts()): the_post(); ?>
+          <h2><?php the_title(); ?></h2>
+          <div class="list-style">
+          <?php the_content(); ?>
+        <?php endwhile; endif; ?>
         </div>
-      </footer>
-    </div>
-</body>
-</html>
+      </div>
+      <?php get_footer(); ?>

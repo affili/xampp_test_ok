@@ -52,7 +52,16 @@ function setPostViews($postID){
     update_post_meta($postID, $count_key, $count);
   }
 }
-remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0)
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+//ヘッダーメニュー
+register_nav_menu('header_navi', 'ヘッダーナビ');
+//フッターメニュー
+register_nav_menu('footer_memu', 'フッターメニュー');
+//フッターメニュー２
+register_nav_menu('footer_memu2', 'フッターメニュー2');
+//about レフトメニュー
+register_nav_menu('about_menu', 'アバウトレフトナビ');
 
 
 ?>
