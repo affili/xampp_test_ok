@@ -11,7 +11,7 @@
           <div class="post-text">
             <a href="<?php the_permalink(); ?>">
               <h3><?php the_title(); ?></h3>
-              <p><?php the_excerpt();?></p>
+              <!--<p><?php the_excerpt();?></p>-->
             </a>
           </div><!--class="post-text" -->
         </div><!--class="post" -->
@@ -24,14 +24,14 @@
       </div><!--class="post" -->
 
       <!--５記事めから表示する-->
-      <?php query_posts('offset=4'); ?>
+      <?php query_posts('offset=5'); ?>
       <?php if(have_posts()):while(have_posts()):the_post(); ?>
       <div class="post">
           <a href="<?php the_permalink(); ?>"><div class="post-img"><?php the_post_thumbnail(array(210, 155)); ?></div></a>
         <div class="post-text">
           <a href="<?php the_permalink(); ?>">
             <h3><?php the_title(); ?></h3>
-            <p><?php the_excerpt();?></p>
+            <!--<p><?php the_excerpt();?></p>-->
           </a>
         </div><!--class="post-text" -->
       </div><!--class="post" -->
