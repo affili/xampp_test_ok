@@ -56,7 +56,7 @@ http://mediaxis.jp/
           <h2>おすすめ記事</h2>
           <div class="reco-content">
             <a href="#">
-            <img src="image/girl.jpg" alt="girl" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/deone.jpg>" alt="girl" />
             <p class="date">2017.05.05</p>
             <h3 class="title">1ポンドのハンバーグを食べたら逆に１ポンド痩せた</h3>
           </a>

@@ -26,18 +26,18 @@ http://mediaxis.jp/
 <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
 <!--ビューボードの設置-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php wp_head(); ?>
 </head>
 <body>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Header -->
     <div id="header" class="header">
       <div id="logo">
         <h3 href="#" class="top-name"><span>simple media</span></h3>
       </div>
       <div class="header-slider">
-        <!--<video id="video" src="image/710109623.mp4" autoplay="" preload="auto" loop="">
-        </video>-->
-      </div>
+      <video id="video" poster="<?php echo get_stylesheet_directory_uri(); ?>/image/girl.jpg" muted autoplay loop>
+  <source src="<?php echo get_stylesheet_directory_uri(); ?>/image/710109623.mp4" type="video/mp4">
+  <p>video要素がサポートされていないブラウザでご覧になっています。</p>
+</video>
+  </div>
     </div>
-    <div id="container">

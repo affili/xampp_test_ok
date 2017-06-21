@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div id="main-content">
     <div id="container">
 
 <?php get_sidebar(); ?>
@@ -44,5 +45,7 @@
         </div>
     <?php endif; ?>
     </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>
