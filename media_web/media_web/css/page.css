@@ -165,16 +165,36 @@ color: #4A4A4A;
   height: auto;
   margin: 0 auto;
 }
-.page-content img{
+.page-content-img img{
   width: 540px;
   height: 380px;
 }
 .page-content h2 {
   padding: 40px 20px ;
 }
-.page-content p{
+.page-content-p p{
   padding: 40px 20px;
   font-size: 18px;
+}
+.page-category {
+  font-size: 14px;
+  padding: 20px 0px 20px 20px;
+  float: left;
+}
+.page-date {
+  font-size: 14px;
+  float: right;
+  padding: 20px 20px 20px 0px;
+}
+.page-category li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 5px;
+
+}
+.page-category ul {
+  display: inline-block;
+
 }
 .adsence {
   width: 540px;
@@ -213,7 +233,7 @@ color: #4A4A4A;
   border: 1px solid #D8D8D8;
   border-radius: 12px;
 }
-.reco-content img {
+.reco-content-img img {
   width: 140px;
   height: 100px;
   float: left;
@@ -224,6 +244,7 @@ color: #4A4A4A;
 }
 .title {
   padding: 10px 40px 15px 0px;
+  font-size: 16px;
 }
 
 /* Shere content layout */

@@ -41,8 +41,14 @@ http://mediaxis.jp/
     <?php if(have_posts()):while(have_posts()):the_post(); ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <h2><?php the_title(); ?></h2>
+    <div class="page-category">カテゴリー:<a href=""><?php the_category(); ?></a></div>
+    <p class="page-date"><?php the_time("Y/n/j"); ?></p>
+    <div class="page-content-img">
     <?php the_post_thumbnail(); ?>
+  </div>
+  <div class="page-content-p">
     <?php the_content(); ?>
+  </div>
     </div>
 <?php endwhile;endif; ?>
     <!--AD挿入場所-->
@@ -53,43 +59,7 @@ http://mediaxis.jp/
 
     <!--おすすめ記事-->
         <div id="recommended-content">
-          <h2>おすすめ記事</h2>
-          <div class="reco-content">
-            <a href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/deone.jpg>" alt="girl" />
-            <p class="date">2017.05.05</p>
-            <h3 class="title">1ポンドのハンバーグを食べたら逆に１ポンド痩せた</h3>
-          </a>
-          </a>
-          </div>
-          <div class="reco-content">
-            <a href="#">
-            <img src="image/girl.jpg" alt="girl" />
-            <p class="date">2017.05.05</p>
-            <h3 class="title">1ポンドのハンバーグを食べたら逆に１ポンド痩せた</h3>
-          </a>
-          </div>
-          <div class="reco-content">
-            <a href="#">
-            <img src="image/girl.jpg" alt="girl" />
-            <p class="date">2017.05.05</p>
-            <h3 class="title">1ポンドのハンバーグを食べたら逆に１ポンド痩せた</h3>
-          </a>
-          </div>
-          <div class="reco-content">
-            <a href="#">
-            <img src="image/girl.jpg" alt="girl" />
-            <p class="date">2017.05.05</p>
-            <h3 class="title">1ポンドのハンバーグを食べたら逆に１ポンド痩せた</h3>
-          </a>
-          </div>
-          <div class="reco-content">
-            <a href="#">
-            <img src="image/girl.jpg" alt="girl" />
-            <p class="date">2017.05.05</p>
-            <h3 class="title">1ポンドのハンバーグを食べたら逆に１ポンド痩せた</h3>
-          </a>
-          </div>
+            <?php related_posts(); ?>
         </div>
 
     <!--SNS-->

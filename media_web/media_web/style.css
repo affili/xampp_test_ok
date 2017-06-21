@@ -140,7 +140,7 @@ color: #4A4A4A;
 }
 .date{
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
 }
 .ranking-title{
   font-weight: bold;
@@ -165,6 +165,7 @@ color: #4A4A4A;
   border-right: 1px solid #E6E6E6;
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+  min-height: 80px;
 }
 .saide-ranking-li:last-child a{
   display: block;
