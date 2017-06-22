@@ -68,6 +68,17 @@ function setPostViews($postID){
 }
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
+//ウィジェットに対応させる
+register_sidebar( array(
+     'name' => __( 'Side Widget' ),
+     'id' => 'side-widget',
+     'before_widget' => '<li class="widget-container">',
+     'after_widget' => '</li>',
+     'before_title' => '<h3>',
+     'after_title' => '</h3>',
+) );
+
+
 //ヘッダーメニュー
 register_nav_menu('header_navi', 'ヘッダーナビ');
 //フッターメニュー
