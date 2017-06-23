@@ -72,7 +72,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 register_sidebar( array(
      'name' => __( 'Side Widget' ),
      'id' => 'side-widget',
-     'before_widget' => '<li class="widget-container">',
+     'before_widget' => '<li class="saide-ranking-li">',
      'after_widget' => '</li>',
      'before_title' => '<h3>',
      'after_title' => '</h3>',

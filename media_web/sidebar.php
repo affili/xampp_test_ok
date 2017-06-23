@@ -11,5 +11,9 @@ Template Name: Right saide navi
 
 <div class="right-ad"></div>
 
-
+<div id="saide-ranking">
+  <ul>
+    <?php dynamic_sidebar( 'side-widget'); ?>
+  </ul>
+</div>
 </div>
