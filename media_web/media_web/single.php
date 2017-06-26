@@ -39,12 +39,12 @@ http://mediaxis.jp/
   <div class="page-content">
     <?php query_posts('posts_per_page=1'); ?>
     <?php if(have_posts()):while(have_posts()):the_post(); ?>
+      <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <h2><?php the_title(); ?></h2>
+      <?php the_post_thumbnail(); ?>
+      <?php the_content(); ?>
+      </div>
       <?php the_post(); ?>
-    <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail(); ?>
-    <?php the_content(); ?>
-    </div>
 <?php endwhile;endif; ?>
     <!--AD挿入場所-->
     <div class="adsence">

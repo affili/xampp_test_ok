@@ -12,6 +12,7 @@
         </div>
       </div>
     </footer>
+
     <script>
   $(function() {
   var getWindowMovieHeight = function() {
@@ -33,6 +34,8 @@
     getWindowMovieHeight();
   });
 });
+});
+
 </script>
 </body>
 </html>
